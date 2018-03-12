@@ -1,0 +1,17 @@
+FLUJO BASICO DE GIT
+
+1-	Git clone 	= clonar un repositorio.
+		clone https://github.com/FortAwesome/Font-Awesome.git
+2- 	git checkout develop 	= Te moves al branch de develop
+2.1-git pull origin develop 	= Te trae todos los cambios en el branch de develop
+3- 	git checkout -b NOMBRE_DE_BRANCH 	= Creas un branch (rama) para tu trabajo
+4- 	MOMENTO DE EDITAR EL CODIGO
+5-  git status 	= Te muestra todos los archivos que fueron modificados
+6- 	git add ARCHIVO1, ARCHIVO2, ETC 	= Añadis al area de STAGING los archivos
+7-	git commit -m "MENSAJE DE QUE AÑADE EL COMMIT"	= Crea un paquete con todo lo que este en el area de STAGING (SIEMPRE poner -m "Mensaje")
+8-  git push origin NOMBRE_DE_BRANCH	= Envia al proyecto en TU BRANCH el codigo que commiteaste.
+9- 	Entras a GitHub, vas al proyecto y te aparece un "MERGE REQUEST" Pendiente.
+10- Creas el Merge Request explicando en un corto mensaje que cambios ocurren.
+11-	Solicitas
+12- Esperas a que alguien te comente errores para solucionar o lo aprueben.
+13- Volves a tu git y empezas desde el paso 2.
