@@ -1,0 +1,43 @@
+En la consola de Linux o usando GIT BASH
+
+ls 		=	Lista todos los archivos y/o carpetas en la ubicacion actual.
+ll		= 	Igual al anterior, pero mostrando mas informacion (permisos, peso, dueño, etc)
+cd		= 	Redireccion entre directorios
+	cd carpeta1 => Vas a moverte a carpeta1 (Siempre y cuando exista en la ubicacion que estas parado)
+	cd .. => Vas a la carpeta contenedora de la carpeta actual
+	cd carpeta1/carpeta1.1/carpeta1.1.1 => Vas directamente 3 directorios adelante
+	cd ../carpetaHermanaDe1 => Volves atras y vas a la carpeta hermana de carpeta1
+	cd ../.. => etc
+mkdir 	= 	Crea una carpeta dentro de la ubicacion actual
+	mkdir carpetaNueva => Va a crear la "carpetaNueva" donde estas parado
+	mkdir ../carpetaHermana => Va a crear una carpeta hermana a la carpeta donde estas parado
+	mkdir carpeta1/carpeta1.1/nuevaCarpeta => Crea una carpeta bis nieta
+touch 	= 	Crea un archivo
+	touch archivo1.txt => Crea un archivo1.txt en la ubicacion actual
+	touch ../archivo1.txt => etc
+	touch carpeta1/archivo1.txt => etc
+cat 	= 	Muestra todo un archivo de texto en pantalla
+	cat archivo1.txt => Muestra toda la informacion de archivo1.txt (sirve para .js, .md, etc)
+vim		= 	Editor de texto en pantalla
+	vim archivo1.txt => Edito en el batch el archivo de texto
+		1.	Al entrar a vim presionar la tecla "i" para activar el modo de "INSERTAR"
+		2.	Editar el texto que quieras
+		3.	Precionar "Ctrl + C"
+			3.1.	Escribir :q! 	// Para salir sin guardar
+			3.2.	Escribir :wq! 	// Para salir y guardar
+			3.3.	Escribir :w! 	// Para guardar
+cp 		= 	Copiar archivos
+	cp archivo1.txt archivo2.txt 	=> Copia el archivo1 en la misma carpeta con el nombre archivo2
+	cp carpeta1/archivo1.txt carpeta2/carpeta2.1/archivo2.txt 	=> Copia el archivo de la carpeta1 a la carpeta2/carpeta2.1
+mv 		= 	Mover archivos
+	Igual que en "cp" solo que mueve
+rm 		= 	Borrar un archivo y/o carpeta (Si la carpeta tiene subcarpetas o subarchivos no la borra)
+	rm archivo1.txt 
+	rm carpeta1.txt
+rm -rf 	= 	Borra un archivo y/o carpeta (Si la carpeta tiene subcarpetas o subarchivos BORRA TODO)
+	rm -rf carpeta1.txt
+find 	= Busca un archivo y/o carpeta en el directorio actual y los subdirectorios
+	find -name = "nombre" => Busca "nombre" en el directorio y subdirectorios
+	find -iname = "nombre" => Busca "nombre" en el directorio y subdirectorios sin importarle las mayusculas
+
+Nota: Si estas en un entorno con Linux tenes que usar el comando "sudo" adelante de los comandos. 
